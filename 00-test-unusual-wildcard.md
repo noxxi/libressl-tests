@@ -65,7 +65,7 @@
     - With LibreSSL 3.3.0: "server-unusual-wildcard.pem: server-unusual-wildcard.pem: verification failed: 53 (unsupported or invalid name syntax)" \
       (Yes, in the error case the certificate name is output twice)
 
-## Test#5 - openssl verify, common wildcard cert
+## Test#6 - openssl verify, common wildcard cert
 
 - Command: openssl verify -CAfile caR.pem server-common-wildcard.pem
 - Results
