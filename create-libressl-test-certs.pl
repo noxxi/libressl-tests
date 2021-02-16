@@ -11,8 +11,8 @@ my @ca = cert(
 out('caR.pem', pem(crt => $ca[0]));
 out('caR.key', pem(key => $ca[1]));
 
-# server certificate where SAN contains in-label wildcards which are allowed by
-# RFC 6125
+# server certificate where SAN contains in-label wildcards, which a
+# client MAY choose to accept as per RFC 6125 section 6.4.3.
 my @leafcert = cert(
     issuer => \@ca,
     purpose => 'server',
